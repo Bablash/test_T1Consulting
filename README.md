@@ -21,4 +21,5 @@ OpenApi доступно по http://localhost:8080/swagger-ui/index.html
 
 Пример:
 Входная строка:aaaaabbbc
+
 Выходная строка:{a=5, b=3, c=1}
