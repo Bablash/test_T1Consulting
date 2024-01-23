@@ -30,7 +30,7 @@ class ResultControllerTest {
     @DisplayName("GET /result возвращает HTTP-ответ со статусом 200 OK и список символов с количеством их повторений")
     void getResult_ReturnsValidResponseEntity() {
         String input = "aaaaabbbc";
-        String result = "a=5, b=3, c=1";
+        String result = "{a=5, b=3, c=1}";
         doReturn(result).when(this.resultService).getResult(input);
 
         var responseEntity = this.resultController.getResult(input);
